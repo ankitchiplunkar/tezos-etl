@@ -12,7 +12,7 @@ Python scripts to perform ETL (extract, transform & load) jobs for the tezos blo
 * Redash → Managing queries and dashboards
 
 ## Useful links
-* [Bigquery](https://github.com/ankitchiplunkar/tezos-etl/tree/master/infra)
+* [Bigquery](https://bigquery.cloud.google.com/dataset/tezos-query:tezos_etl)
 * [Schema](https://github.com/ankitchiplunkar/tezos-etl/tree/master/tezos_etl/schema)
 * [Setting up infra](https://github.com/ankitchiplunkar/tezos-etl/tree/master/infra)
 
