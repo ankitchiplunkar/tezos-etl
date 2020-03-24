@@ -1,5 +1,5 @@
 # Tezos ETL
-Python scripts to perform ETL (e)xtract, transform & load) jobs for the tezos blockchain.
+Python scripts to perform ETL (extract, transform & load) jobs for the tezos blockchain.
 
 ## Objectives
 * Create a publicly queryable tezos database for verifiable data analysis
