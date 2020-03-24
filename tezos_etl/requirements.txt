@@ -1,0 +1,5 @@
+requests==2.23.0
+fastavro==0.21.18
+pytest==4.0.0
+google-cloud-storage==1.26.0
+safe_cast==0.3.4

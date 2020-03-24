@@ -1,0 +1,62 @@
+{
+    "type" : "record",
+    "name" : "Origination",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "Origination",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_group_id",
+      "type" : "int"
+    }, {
+      "name" : "operation_id",
+      "type" : "int"
+    }, {
+      "name" : "source",
+      "type" : "string"
+    }, {
+      "name" : "delegate",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "manager_public_key",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "fee",
+      "type" : "long"
+    }, {
+      "name" : "counter",
+      "type" : "int"
+    }, {
+      "name" : "gas_limit",
+      "type" : "long"
+    }, {
+      "name" : "storage_limit",
+      "type" : "long"
+    }, {
+      "name" : "status",
+      "type" : "string"
+    }, {
+      "name" : "balance",
+      "type" : "long"
+    }, {
+      "name" : "originated_contracts",
+      "type" : {
+        "type" : "array",
+        "items" : "string"
+      }
+    }]
+  }
+

@@ -1,0 +1,41 @@
+{
+    "type" : "record",
+    "name" : "BalanceUpdate",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "BalanceUpdate",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "type",
+      "type" : "string"
+    }, {
+      "name" : "operation_hash",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "kind",
+      "type" : "string"
+    }, {
+      "name" : "contract",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "change",
+      "type" : "long"
+    }, {
+      "name" : "delegate",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "category",
+      "type" : [ "null", "string" ]
+    }]
+  }
+

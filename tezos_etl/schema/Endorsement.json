@@ -1,0 +1,41 @@
+{
+    "type" : "record",
+    "name" : "Endorsement",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "Endorsement",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_group_id",
+      "type" : "int"
+    }, {
+      "name" : "operation_id",
+      "type" : "int"
+    }, {
+      "name" : "delegate",
+      "type" : "string"
+    }, {
+      "name" : "public_key",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "slots",
+      "type" : {
+        "type" : "array",
+        "items" : "int"
+      }
+    }]
+  }
+

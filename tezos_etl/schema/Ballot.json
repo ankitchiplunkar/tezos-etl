@@ -1,0 +1,41 @@
+{
+    "type" : "record",
+    "name" : "Ballot",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "Ballot",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_group_id",
+      "type" : "int"
+    }, {
+      "name" : "operation_id",
+      "type" : "int"
+    }, {
+      "name" : "period",
+      "type" : "int"
+    }, {
+      "name" : "source",
+      "type" : "string"
+    }, {
+      "name" : "proposal",
+      "type" : "string"
+    }, {
+      "name" : "ballot",
+      "type" : "string"
+    }]
+  }
+

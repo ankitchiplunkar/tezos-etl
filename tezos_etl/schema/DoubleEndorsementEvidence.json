@@ -1,0 +1,47 @@
+{
+    "type" : "record",
+    "name" : "DoubleEndorsementEvidence",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "DoubleEndorsementEvidence",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_group_id",
+      "type" : "int"
+    }, {
+      "name" : "operation_id",
+      "type" : "int"
+    }, {
+      "name" : "denounced_1_branch",
+      "type" : "string"
+    }, {
+      "name" : "denounced_1_signature",
+      "type" : "string"
+    }, {
+      "name" : "denounced_1_level",
+      "type" : "long"
+    }, {
+      "name" : "denounced_2_branch",
+      "type" : "string"
+    }, {
+      "name" : "denounced_2_signature",
+      "type" : "string"
+    }, {
+      "name" : "denounced_2_level",
+      "type" : "long"
+    }]
+  }
+

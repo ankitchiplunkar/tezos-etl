@@ -1,0 +1,6 @@
+*venv
+*egg-info
+*__pycache__
+tezos-query*.json
+*raw-data
+*avro-data

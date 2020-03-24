@@ -1,0 +1,101 @@
+{
+    "type" : "record",
+    "name" : "DoubleBakingEvidence",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "DoubleBakingEvidence",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_group_id",
+      "type" : "int"
+    }, {
+      "name" : "operation_id",
+      "type" : "int"
+    }, {
+      "name" : "denounced_1_level",
+      "type" : "long"
+    }, {
+      "name" : "denounced_1_proto",
+      "type" : "int"
+    }, {
+      "name" : "denounced_1_predecessor",
+      "type" : "string"
+    }, {
+      "name" : "denounced_1_timestamp",
+      "type" : "long"
+    }, {
+      "name" : "denounced_1_validation_pass",
+      "type" : "int"
+    }, {
+      "name" : "denounced_1_operations_hash",
+      "type" : "string"
+    }, {
+      "name" : "denounced_1_fitness",
+      "type" : {
+        "type" : "array",
+        "items" : "string"
+      }
+    }, {
+      "name" : "denounced_1_context",
+      "type" : "string"
+    }, {
+      "name" : "denounced_1_priority",
+      "type" : "long"
+    }, {
+      "name" : "denounced_1_proof_of_work_nonce",
+      "type" : "string"
+    }, {
+      "name" : "denounced_1_signature",
+      "type" : "string"
+    }, {
+      "name" : "denounced_2_level",
+      "type" : "long"
+    }, {
+      "name" : "denounced_2_proto",
+      "type" : "int"
+    }, {
+      "name" : "denounced_2_predecessor",
+      "type" : "string"
+    }, {
+      "name" : "denounced_2_timestamp",
+      "type" : "long"
+    }, {
+      "name" : "denounced_2_validation_pass",
+      "type" : "int"
+    }, {
+      "name" : "denounced_2_operations_hash",
+      "type" : "string"
+    }, {
+      "name" : "denounced_2_fitness",
+      "type" : {
+        "type" : "array",
+        "items" : "string"
+      }
+    }, {
+      "name" : "denounced_2_context",
+      "type" : "string"
+    }, {
+      "name" : "denounced_2_priority",
+      "type" : "long"
+    }, {
+      "name" : "denounced_2_proof_of_work_nonce",
+      "type" : "string"
+    }, {
+      "name" : "denounced_2_signature",
+      "type" : "string"
+    }]
+  }
+

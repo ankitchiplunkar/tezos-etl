@@ -1,0 +1,41 @@
+{
+    "type" : "record",
+    "name" : "Proposal",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "Proposal",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_group_id",
+      "type" : "int"
+    }, {
+      "name" : "operation_id",
+      "type" : "int"
+    }, {
+      "name" : "source",
+      "type" : "string"
+    }, {
+      "name" : "proposals",
+      "type" : {
+        "type" : "array",
+        "items" : "string"
+      }
+    }, {
+      "name" : "period",
+      "type" : "int"
+    }]
+  }
+

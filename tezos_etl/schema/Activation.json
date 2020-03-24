@@ -1,0 +1,35 @@
+{
+    "type" : "record",
+    "name" : "Activation",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "Activation",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_group_id",
+      "type" : "int"
+    }, {
+      "name" : "operation_id",
+      "type" : "int"
+    }, {
+      "name" : "public_key_hash",
+      "type" : "string"
+    }, {
+      "name" : "secret",
+      "type" : "string"
+    }]
+  }
+

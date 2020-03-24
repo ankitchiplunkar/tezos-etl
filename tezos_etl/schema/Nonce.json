@@ -1,0 +1,32 @@
+{
+    "type" : "record",
+    "name" : "Operation",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "Operation",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_hash",
+      "type" : "string"
+    }, {
+      "name" : "operation_group_id",
+      "type" : "int"
+    }, {
+      "name" : "operation_id",
+      "type" : "int"
+    }, {
+      "name" : "nonce",
+      "type" : "string"
+    }]
+  }
+

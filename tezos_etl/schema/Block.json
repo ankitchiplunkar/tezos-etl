@@ -1,0 +1,79 @@
+{
+    "type" : "record",
+    "name" : "Block",
+    "namespace" : "io.tezos.etl.lake",
+    "doc" : "Block",
+    "fields" : [ {
+      "name" : "level",
+      "type" : "long"
+    }, {
+      "name" : "proto",
+      "type" : "long"
+    }, {
+      "name" : "predecessor",
+      "type" : "string"
+    }, {
+      "name" : "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+    }
+    }, {
+      "name" : "validation_pass",
+      "type" : "long"
+    }, {
+      "name" : "operations_hash",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "fitness",
+      "type" : {
+        "type" : "array",
+        "items" : "string"
+      }
+    }, {
+      "name" : "context",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "protocol",
+      "type" : "string"
+    }, {
+      "name" : "chain_id",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "block_hash",
+      "type" : "string"
+    }, {
+      "name" : "nonce_hash",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "consumed_gas",
+      "type" : [ "null", "long" ]
+    }, {
+      "name" : "baker",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "voting_period_kind",
+      "type" : [ "null", "string" ]
+    }, {
+      "name" : "cycle",
+      "type" : [ "null", "int" ]
+    }, {
+      "name" : "cycle_position",
+      "type" : [ "null", "int" ]
+    }, {
+      "name" : "voting_period",
+      "type" : [ "null", "int" ]
+    }, {
+      "name" : "voting_period_position",
+      "type" : [ "null", "int" ]
+    }, {
+      "name" : "expected_commitment",
+      "type" : [ "null", "boolean" ]
+    }, {
+      "name" : "number_of_operation_groups",
+      "type" : "int"
+    }, {
+      "name" : "number_of_operations",
+      "type" : "int"
+    }]
+  }
